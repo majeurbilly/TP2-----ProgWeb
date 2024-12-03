@@ -3,25 +3,34 @@ const messageErreur  = document.getElementById("messageErreur");
 const formulaireInscription = document.getElementById("formulaireInscription");
 formulaireInscription.onsubmit = GetNumber;
 const rndNumber =  Math.floor(Math.random() * 100 + 1);
+let counter = 0;
 
-function GetNumber(evenment) {
+function GetNumber(evenement) {
     const userNumber = parseInt(numberInput.value);
-    console.log("random: "+rndNumber);
+    console.log("random: " + rndNumber);
 
     if (rndNumber < userNumber) {
-        messageErreur.textContent = "va plus bas";
+        messageErreur.textContent = "Le nombre à deviner est plus bas que " + userNumber + " 👇";
         numberInput.classList.add("border-danger");
         messageErreur.classList.remove('d-none');
-        evenment.preventDefault();
+        counter++;
+        evenement.preventDefault();
+    } else if (rndNumber > userNumber) {
+        messageErreur.textContent = "Le nombre à deviner est plus élevé que " + userNumber + " 👇";
+        numberInput.classList.add("border-danger");
+        messageErreur.classList.remove('d-none');
+        counter++;
+        evenement.preventDefault();
+    } else {
+        // Hide the input and show success message
+        formulaireInscription.innerHTML = `
+            <p>Bravo! Vous avez gagné en ${counter} coups.</p>
+            <button id="replayButton">Jouer à nouveau</button>
+        `;
 
-    }
-    else if (rndNumber > userNumber) {
-        messageErreur.textContent = "va plus haut";
-        numberInput.classList.add("border-danger");
-        messageErreur.classList.remove('d-none');
-        evenment.preventDefault();
-    }
-    else {
-        alert("Bravo, tu as trouvé le nombre secret 💪 C'étais ---> " + rndNumber);
+        // Add event listener to the replay button
+        const replayButton = document.getElementById("replayButton");
+        replayButton.onclick = () => location.reload();
+        evenement.preventDefault();
     }
 }
