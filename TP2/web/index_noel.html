@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="../main_noel.js"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Formulaire de party de Noël</title>
+</head>
+<body>
+<h1 class="text-center mt-5">Invitation au party de noel de Billy</h1>
+<div class="container fluid mt-5 text-center">
+    <form>
+        <div>
+            <label for="nameInput" class="form-label">Quelle est votre nom :
+                <input type="text" name="nameInput" id="nameInput" required>
+            </label>
+        </div>
+        <div>
+            <p>Allez vous etre present?</p>
+            <label for="isPresent" class="form-label">OUI
+                <input type="radio" name="IsPresent" id="isPresent" required>
+            </label>
+            <label for="isPresent" class="form-label">NON
+                <input type="radio" name="IsPresent" id="isPresentNot">
+            </label>
+        </div>
+        <!--   <div class="d-none" id="userIsPresent">   -->
+        <div>
+            <p>Quelle sera ton repas</p>
+            <label>
+                <select name="Menu" id="Menu">
+                    <option value="" selected disabled></option>
+                    <option value="Poulet aux ananas">Poulet aux ananas</option>
+                    <option value="Bœuf braisé">Bœuf braisé</option>
+                    <option value="Tourtière végane">Tourtière végane</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <p>Allez vous etre accompagner</p>
+            <label for="isAccompagner" class="form-label">Oui
+                <input type="radio" name="isAccompagner" id="isAccompagner" required>
+            </label>
+            <label for="isAccompagner" class="form-label">Non
+                <input type="radio" name="isAccompagner" id="isNotAccompagner">
+            </label>
+        </div>
+        <!--     <div class="d-none" id="userIsAccompagner"> -->
+        <p>Nom de votre partenaire : </p>
+        <label>
+            <input type="text" name="nameOfPartenaire" id="nameOfPartenaire" required>
+        </label>
+        <!--  </div> -->
+        <div>
+            <p>Une sélection obligatoire de deux activités parmi :</p>
+            <label>
+                <input type="checkbox" name="activities" value="Traîneaux à chien"> Traîneaux à chien
+            </label><br>
+            <label>
+                <input type="checkbox" name="activities" value="Noël disco"> Noël disco
+            </label><br>
+            <label>
+                <input type="checkbox" name="activities" value="Karaoké"> Karaoké
+            </label><br>
+            <label>
+                <input type="checkbox" name="activities" value="Glissades"> Glissades
+            </label><br>
+            <label>
+                <input type="checkbox" name="activities" value="Laser tag"> Laser tag
+            </label><br>
+            <label>
+                <input type="checkbox" name="activities" value="Casino"> Casino
+            </label><br>
+        </div>
+        <!--    </div> -->
+        <button type="submit">Envoyer</button>
+    </form>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</html>
