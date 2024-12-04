@@ -7,25 +7,35 @@ const formulairePresence = document.getElementById("formulaireInscription");
 const userIsPresent2 = document.getElementById("userIsPresent2");
 const Menu = document.getElementById("Menu");
 const boutonDenvoie = document.getElementById("boutonDenvoies");
+const isAccompagner = document.getElementById("isAccompagner");
+const isNotAccompagner = document.getElementById("isNotAccompagner");
+const userIsAccompagner = document.getElementById("userIsAccompagner");
 
-boutonDenvoie.onsubmit = Validation_Presence;
+isPresent.onclick = UserItIsPresent;
+isPresentNot.onclick = UserItIsPresent;
+isAccompagner.onclick = ItIsAccompagner;
+isNotAccompagner.onclick = ItIsAccompagner
 
 function UserItIsPresent() {
-    let reponse = false;
     if (isPresent.checked) {
         userIsPresent.classList.remove("d-none");
-        reponse = true;
-    } else if (isPresentNot.checked) {
-        alert('Formulaire envoyé')
+    } else {
+        userIsPresent.classList.add("d-none");
+    }
+}
+function ItIsAccompagner()
+{
+    if (isAccompagner.checked) {
+        userIsAccompagner.classList.remove("d-none");
+    }
+    else if (isNotAccompagner.checked) {
+        userIsAccompagner.classList.add("d-none");
     }
 }
 
 function Validation_Presence(evenement) {
 
-    if (!UserItIsPresent()) {
-        alert('Formulaire envoyé')
-    } else if (UserItIsPresent()) {
-        userIsPresent.classList.remove("d-none");
-        evenement.preventDefault();
-    }
+    let count = 0;
+
+
 }
