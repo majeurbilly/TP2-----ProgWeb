@@ -10,8 +10,10 @@
 </head>
 <body>
 <h1 class="text-center mt-5">Invitation au party de noel de Billy</h1>
+<!-- formulaire -->
 <div class="container fluid mt-5 text-center">
-    <form>
+    <form action="" id="formulaireInscription" method="post">
+        <!-- input name -->
         <div>
             <label for="nameInput" class="form-label">Quelle est votre nom :
                 <input type="text" name="nameInput" id="nameInput" required>
@@ -20,63 +22,66 @@
         <div>
             <p>Allez vous etre present?</p>
             <label for="isPresent" class="form-label">OUI
-                <input type="radio" name="IsPresent" id="isPresent" required>
+                <input type="radio" name="ItIsPresent" id="isPresent" required>
             </label>
             <label for="isPresent" class="form-label">NON
-                <input type="radio" name="IsPresent" id="isPresentNot">
+                <input type="radio" name="ItIsPresent" id="isPresentNot">
             </label>
         </div>
-        <!--   <div class="d-none" id="userIsPresent">   -->
-        <div>
-            <p>Quelle sera ton repas</p>
-            <label>
-                <select name="Menu" id="Menu">
-                    <option value="" selected disabled></option>
-                    <option value="Poulet aux ananas">Poulet aux ananas</option>
-                    <option value="Bœuf braisé">Bœuf braisé</option>
-                    <option value="Tourtière végane">Tourtière végane</option>
-                </select>
-            </label>
+        <div class="d-none" id="userIsPresent">
+            <div>
+                <p>Quelle sera ton repas</p>
+                <label>
+                    <select name="Menu" id="Menu">
+                        <option value="" selected disabled></option>
+                        <option value="Poulet aux ananas">Poulet aux ananas</option>
+                        <option value="Bœuf braisé">Bœuf braisé</option>
+                        <option value="Tourtière végane">Tourtière végane</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <p>Allez vous etre accompagner</p>
+                <label for="isAccompagner" class="form-label">Oui
+                    <input type="radio" name="isAccompagner" id="isAccompagner" required>
+                </label>
+                <label for="isAccompagner" class="form-label">Non
+                    <input type="radio" name="isAccompagner" id="isNotAccompagner">
+                </label>
+            </div>
+            <div class="d-none" id="userIsAccompagner">
+                <p>Nom de votre partenaire : </p>
+                <label>
+                    <input type="text" name="nameOfPartenaire" id="nameOfPartenaire" required>
+                </label>
+            </div>
+            <div>
+                <p>Une sélection obligatoire de deux activités parmi :</p>
+                <label>
+                    <input type="checkbox" name="activities" value="Traîneaux à chien"> Traîneaux à chien
+                </label><br>
+                <label>
+                    <input type="checkbox" name="activities" value="Noël disco"> Noël disco
+                </label><br>
+                <label>
+                    <input type="checkbox" name="activities" value="Karaoké"> Karaoké
+                </label><br>
+                <label>
+                    <input type="checkbox" name="activities" value="Glissades"> Glissades
+                </label><br>
+                <label>
+                    <input type="checkbox" name="activities" value="Laser tag"> Laser tag
+                </label><br>
+                <label>
+                    <input type="checkbox" name="activities" value="Casino"> Casino
+                </label><br>
+            </div>
         </div>
-        <div>
-            <p>Allez vous etre accompagner</p>
-            <label for="isAccompagner" class="form-label">Oui
-                <input type="radio" name="isAccompagner" id="isAccompagner" required>
-            </label>
-            <label for="isAccompagner" class="form-label">Non
-                <input type="radio" name="isAccompagner" id="isNotAccompagner">
-            </label>
-        </div>
-        <!--     <div class="d-none" id="userIsAccompagner"> -->
-        <p>Nom de votre partenaire : </p>
-        <label>
-            <input type="text" name="nameOfPartenaire" id="nameOfPartenaire" required>
-        </label>
-        <!--  </div> -->
-        <div>
-            <p>Une sélection obligatoire de deux activités parmi :</p>
-            <label>
-                <input type="checkbox" name="activities" value="Traîneaux à chien"> Traîneaux à chien
-            </label><br>
-            <label>
-                <input type="checkbox" name="activities" value="Noël disco"> Noël disco
-            </label><br>
-            <label>
-                <input type="checkbox" name="activities" value="Karaoké"> Karaoké
-            </label><br>
-            <label>
-                <input type="checkbox" name="activities" value="Glissades"> Glissades
-            </label><br>
-            <label>
-                <input type="checkbox" name="activities" value="Laser tag"> Laser tag
-            </label><br>
-            <label>
-                <input type="checkbox" name="activities" value="Casino"> Casino
-            </label><br>
-        </div>
-        <!--    </div> -->
         <button type="submit">Envoyer</button>
     </form>
+    <div class="alert alert-danger d-none col-md-4 offset-md-3 mt-5" id="messageErreur">
+
+    </div>
 </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

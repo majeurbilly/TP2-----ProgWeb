@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1f6d297-1f8a-4ccc-96c5-32145743ae32" name="Changes" comment="exercice 1 ✅">
-      <change afterPath="$PROJECT_DIR$/TP2/main_noel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP2/web/index_noel.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/web/index_Hi_Low.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP2/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/main_Hi_Low.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP2/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP2/main_noel.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/main_noel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP2/web/index_noel.html" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/web/index_noel.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +90,7 @@
       <workItem from="1733252801635" duration="4211000" />
       <workItem from="1733261920957" duration="6521000" />
       <workItem from="1733276843371" duration="9566000" />
+      <workItem from="1733322022661" duration="3059000" />
     </task>
     <task id="LOCAL-00001" summary="exercice 1 ✅">
       <option name="closed" value="true" />
@@ -107,6 +105,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="exercice 1 ✅" />
