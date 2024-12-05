@@ -108,8 +108,6 @@ function Formulaire_Valide(evenement) {
             } else {
                 messageErreur.textContent += "+ Vous devez choisir 2 activités";
             }
-
-
         }
         if (count !== 0) {
             messageErreur.classList.remove("d-none");
