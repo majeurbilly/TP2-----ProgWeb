@@ -2,19 +2,27 @@ const nameInput = document.getElementById("nameInput");
 const isPresent = document.getElementById("isPresent");
 const isPresentNot = document.getElementById("isPresentNot");
 const userIsPresent = document.getElementById("userIsPresent");
-const ItIsPresent = document.getElementsByName("ItIsPresent");
-const formulairePresence = document.getElementById("formulaireInscription");
+const ClientisAccompagner = document.getElementsByName("ClientisAccompagner");
+const ValidationFormulaire = document.getElementById("formulaireInscription");
 const userIsPresent2 = document.getElementById("userIsPresent2");
 const Menu = document.getElementById("Menu");
 const boutonDenvoie = document.getElementById("boutonDenvoies");
 const isAccompagner = document.getElementById("isAccompagner");
 const isNotAccompagner = document.getElementById("isNotAccompagner");
 const userIsAccompagner = document.getElementById("userIsAccompagner");
+const Traîneaux_a_chien = document.getElementById("Traîneaux_a_chien");
+const Noël_disco = document.getElementById("Noël_disco");
+const Karaoké = document.getElementById("Karaoké");
+const Glissades = document.getElementById("Glissades");
+const Laser_tag = document.getElementById("Laser_tag");
+const Casino = document.getElementById("Casino");
+
 
 isPresent.onclick = UserItIsPresent;
 isPresentNot.onclick = UserItIsPresent;
 isAccompagner.onclick = ItIsAccompagner;
-isNotAccompagner.onclick = ItIsAccompagner
+isNotAccompagner.onclick = ItIsAccompagner;
+ValidationFormulaire.onsubmit = Formulaire_Valide;
 
 function UserItIsPresent() {
     if (isPresent.checked) {
@@ -32,10 +40,84 @@ function ItIsAccompagner()
         userIsAccompagner.classList.add("d-none");
     }
 }
-
-function Validation_Presence(evenement) {
+function Repas_IsSelect(){
+    if (Menu.value === "") {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+function Accomppagement_IsSelect(){
+    if (!isAccompagner.checked && !isNotAccompagner.checked) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+function Activity_IsSelect(){
+    let count = 0;
+    if (Traîneaux_a_chien.checked) {
+        count++;
+    }
+    if (Noël_disco.checked) {
+        count++;
+    }
+    if (Karaoké.checked) {
+        count++;
+    }
+    if (Glissades.checked) {
+        count++;
+    }
+    if (Laser_tag.checked) {
+        count++;
+    }
+    if (Casino.checked) {
+        count++;
+    }
+    if (count > 2 && count < 2) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+function Formulaire_Valide(evenement) {
 
     let count = 0;
+    messageErreur.textContent = "";
+
+    if (!Repas_IsSelect()) {
+        count++;
+        messageErreur.textContent += "Vous devez choisir un Repas ";
+    }
+    if (!Accomppagement_IsSelect()) {
+        count++;
+        if (count === 1) {
+            messageErreur.textContent += "Avez vous un partenaire ?";
+        } else if (count === 2) {
+            messageErreur.textContent += "et avez vous un partenaire?";
+        } else {
+            messageErreur.textContent += "et avez vous un partenaire? Et ";
+        }
+        if (!Activity_IsSelect()) {
+            count++;
+            if (count === 1) {
+                messageErreur.textContent += "Vous devez choisir 2 activités";
+            } else if (count === 2) {
+                messageErreur.textContent += "et vous devez choisir 2 activités";
+            } else {
+                messageErreur.textContent += "et vous devez choisir 2 activités et ";
+            }
 
 
+        }
+        if (count !== 0) {
+            messageErreur.classList.remove("d-none");
+            evenement.preventDefault();
+        } else {
+            alert("Formuaire envoyé")
+        }
+    }
 }
