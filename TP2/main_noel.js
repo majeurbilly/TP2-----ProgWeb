@@ -10,9 +10,9 @@ const boutonDenvoie = document.getElementById("boutonDenvoies");
 const isAccompagner = document.getElementById("isAccompagner");
 const isNotAccompagner = document.getElementById("isNotAccompagner");
 const userIsAccompagner = document.getElementById("userIsAccompagner");
-const Traîneaux_a_chien = document.getElementById("Traîneaux_a_chien");
-const Noël_disco = document.getElementById("Noël_disco");
-const Karaoké = document.getElementById("Karaoké");
+const Traineaux_a_chien = document.getElementById("Traîneaux_a_chien");
+const Noel_disco = document.getElementById("Noël_disco");
+const Karaoke = document.getElementById("Karaoké");
 const Glissades = document.getElementById("Glissades");
 const Laser_tag = document.getElementById("Laser_tag");
 const Casino = document.getElementById("Casino");
@@ -57,30 +57,30 @@ function Accomppagement_IsSelect(){
     }
 }
 function Activity_IsSelect(){
-    let count = 0;
-    if (Traîneaux_a_chien.checked) {
-        count++;
+    let count = 6;
+    if (!Traineaux_a_chien.checked) {
+        count--;
     }
-    if (Noël_disco.checked) {
-        count++;
+    if (!Noel_disco.checked) {
+        count--;
     }
-    if (Karaoké.checked) {
-        count++;
+    if (!Karaoke.checked) {
+        count--;
     }
-    if (Glissades.checked) {
-        count++;
+    if (!Glissades.checked) {
+        count--;
     }
-    if (Laser_tag.checked) {
-        count++;
+    if (!Laser_tag.checked) {
+        count--;
     }
-    if (Casino.checked) {
-        count++;
+    if (!Casino.checked) {
+        count--;
     }
-    if (count > 2 && count < 2) {
-        return false;
+    if (count === 2) {
+        return true;
     }
     else {
-        return true;
+        return false;
     }
 }
 function Formulaire_Valide(evenement) {
@@ -97,18 +97,16 @@ function Formulaire_Valide(evenement) {
         if (count === 1) {
             messageErreur.textContent += "Avez vous un partenaire ?";
         } else if (count === 2) {
-            messageErreur.textContent += "et avez vous un partenaire?";
+            messageErreur.textContent += "+ Avez vous un partenaire? ";
         } else {
-            messageErreur.textContent += "et avez vous un partenaire? Et ";
+            messageErreur.textContent += "+ Avez vous un partenaire? + ";
         }
         if (!Activity_IsSelect()) {
             count++;
             if (count === 1) {
                 messageErreur.textContent += "Vous devez choisir 2 activités";
-            } else if (count === 2) {
-                messageErreur.textContent += "et vous devez choisir 2 activités";
             } else {
-                messageErreur.textContent += "et vous devez choisir 2 activités et ";
+                messageErreur.textContent += "+ Vous devez choisir 2 activités";
             }
 
 

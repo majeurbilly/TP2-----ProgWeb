@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1f6d297-1f8a-4ccc-96c5-32145743ae32" name="Changes" comment="need a gym">
+    <list default="true" id="f1f6d297-1f8a-4ccc-96c5-32145743ae32" name="Changes" comment="need a gym encore, tete dans mon cul">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP2/main_noel.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/main_noel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP2/web/index_noel.html" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/web/index_noel.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +89,7 @@
       <workItem from="1733252801635" duration="4211000" />
       <workItem from="1733261920957" duration="6521000" />
       <workItem from="1733276843371" duration="9566000" />
-      <workItem from="1733322022661" duration="18925000" />
+      <workItem from="1733322022661" duration="22064000" />
     </task>
     <task id="LOCAL-00001" summary="exercice 1 ✅">
       <option name="closed" value="true" />
@@ -124,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733342030858</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="need a gym encore, tete dans mon cul">
+      <option name="closed" value="true" />
+      <created>1733360972621</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733360972621</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +153,7 @@
     <MESSAGE value="petite pause xoxo" />
     <MESSAGE value="need a break" />
     <MESSAGE value="need a gym" />
-    <option name="LAST_COMMIT_MESSAGE" value="need a gym" />
+    <MESSAGE value="need a gym encore, tete dans mon cul" />
+    <option name="LAST_COMMIT_MESSAGE" value="need a gym encore, tete dans mon cul" />
   </component>
 </project>
