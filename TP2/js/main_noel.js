@@ -1,12 +1,12 @@
-const isPresent = document.getElementById("isPresent");
-const isPresentNot = document.getElementById("isPresentNot");
+const isPresent = document.getElementById("presenceEmploye");
+const isPresentNot = document.getElementById("isNotPresenceEmploye");
 const userIsPresent = document.getElementById("userIsPresent");
 const ValidationFormulaire = document.getElementById("formulaireInscription");
-const isAccompagner = document.getElementById("isAccompagner");
-const isNotAccompagner = document.getElementById("isNotAccompagner");
+const isAccompagner = document.getElementById("seraAccompagne");
+const isNotAccompagner = document.getElementById("seraPasAccompagne");
 const userIsAccompagner = document.getElementById("userIsAccompagner");
 const AllCheckBox = document.querySelectorAll('input[name="activities"]');
-const nameOfPartenaire = document.getElementById("nameOfPartenaire");
+const nameOfPartenaire = document.getElementById("nomInvite");
 const estAccompagne = document.getElementById("estAccompagne");
 let counter = 0;
 

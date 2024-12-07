@@ -12,46 +12,45 @@
 <!-- formulaire -->
 <div class="container fluid mt-5 text-center">
     <form action="" id="formulaireInscription" method="post">
-        <!-- input name -->
         <div>
-            <label for="nameInput" class="form-label">Quelle est votre nom :
-                <input type="text" name="nameInput" id="nameInput" required>
+            <label for="nomEmploye" class="form-label">Quelle est votre nom :
+                <input type="text" name="nomEmploye" id="nomEmploye" required>
             </label>
         </div>
         <div>
             <p>Allez vous etre present?</p>
-            <label for="isPresent" class="form-label">OUI
-                <input type="radio" name="ItIsPresent" id="isPresent" required>
+            <label for="presenceEmploye" class="form-label">OUI
+                <input type="radio" value="oui" name="ItIsPresent" id="presenceEmploye" required>
             </label>
-            <label for="isPresent" class="form-label">NON
-                <input type="radio" name="ItIsPresent" id="isPresentNot">
+            <label for="presenceEmploye" class="form-label">NON
+                <input type="radio" value="non" name="ItIsPresent" id="isNotPresenceEmploye">
             </label>
         </div>
         <div class="d-none" id="userIsPresent">
             <div id="MenuSection">
                 <p>Quelle sera ton repas</p>
-                <label>
-                    <select name="Menu" id="Menu" required>
+                <label for="choixRepasEmploye">
+                    <select name="Menu" id="choixRepasEmploye" required>
                         <option value="" selected disabled></option>
-                        <option value="Poulet aux ananas">Poulet aux ananas</option>
-                        <option value="Bœuf braisé">Bœuf braisé</option>
-                        <option value="Tourtière végane">Tourtière végane</option>
+                        <option value="pouletAnanas">Poulet aux ananas</option>
+                        <option value="boeufBraise">Bœuf braisé</option>
+                        <option value="tourtiere">Tourtière végane</option>
                     </select>
                 </label>
             </div>
             <div>
                 <p>Allez vous etre accompagner</p>
-                <label for="isAccompagner" class="form-label">Oui
-                    <input type="radio" name="ClientisAccompagner" id="isAccompagner" required>
+                <label for="seraAccompagne" class="form-label">Oui
+                    <input type="radio" value="oui" name="ClientisAccompagner" id="seraAccompagne" required>
                 </label>
-                <label for="isAccompagner" class="form-label">Non
-                    <input type="radio" name="ClientisAccompagner" id="isNotAccompagner">
+                <label for="seraAccompagne" class="form-label">Non
+                    <input type="radio" value="non" name="ClientisAccompagner" id="seraPasAccompagne">
                 </label>
             </div>
             <div class="d-none" id="userIsAccompagner">
                 <p>Nom de votre partenaire : </p>
-                <label>
-                    <input type="text" name="nameOfPartenaire" id="nameOfPartenaire">
+                <label for="nomInvite">
+                    <input type="text" name="nameOfPartenaire" id="nomInvite">
                 </label>
             </div>
             <div>
