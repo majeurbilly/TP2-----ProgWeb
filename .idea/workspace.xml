@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1f6d297-1f8a-4ccc-96c5-32145743ae32" name="Changes" comment="pas parfait. so je suis fatiguer du cerveau. il est quand meme 22h56">
+    <list default="true" id="7cf0cdc3-21e4-4e01-8aab-fc805c5e0484" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP2/.idea/TP2-----ProgWeb.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP2/main_Hi_Low.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/js/main_Hi_Low.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP2/main_noel.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/js/main_noel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP2/styles/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP2/web/index_Hi_Low.html" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/web/index_Hi_Low.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP2/web/index_noel.html" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/web/index_noel.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,153 +26,83 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;majeurbilly&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "majeurbilly"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/majeurbilly/TP2-----ProgWeb.git&quot;,
-    &quot;accountId&quot;: &quot;9514aa2a-2207-4f22-aac9-8de56e4409d8&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/majeurbilly/TP2-----ProgWeb.git",
+    "accountId": "9514aa2a-2207-4f22-aac9-8de56e4409d8"
   }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2pidOoe6vjtdvcFOmROUOwA3CrL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2ptoQmzf1x0pgFyNt3UXUGqHBHi" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jefou\OneDrive\Desktop\TP2-----ProgWeb\TP2\styles" />
-      <recent name="C:\Users\jefou\OneDrive\Desktop\TP2-----ProgWeb\TP2\web" />
-      <recent name="C:\Users\jefou\OneDrive\Desktop\TP2-----ProgWeb\TP2" />
       <recent name="C:\Users\jefou\OneDrive\Desktop\TP2-----ProgWeb\TP2\js" />
-      <recent name="C:\Users\jefou\OneDrive\Desktop\TP2-----ProgWeb\TP2\.idea\js" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.112" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f1f6d297-1f8a-4ccc-96c5-32145743ae32" name="Changes" comment="" />
-      <created>1733252800545</created>
+      <changelist id="7cf0cdc3-21e4-4e01-8aab-fc805c5e0484" name="Changes" comment="" />
+      <created>1733594721228</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1733252800545</updated>
-      <workItem from="1733252801635" duration="4211000" />
-      <workItem from="1733261920957" duration="6521000" />
-      <workItem from="1733276843371" duration="9566000" />
-      <workItem from="1733322022661" duration="22926000" />
-      <workItem from="1733372491506" duration="398000" />
+      <updated>1733594721228</updated>
+      <workItem from="1733594724369" duration="9201000" />
     </task>
-    <task id="LOCAL-00001" summary="exercice 1 ✅">
-      <option name="closed" value="true" />
-      <created>1733265740577</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1733265740577</updated>
-    </task>
-    <task id="LOCAL-00002" summary="petite pause xoxo">
-      <option name="closed" value="true" />
-      <created>1733325289912</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1733325289912</updated>
-    </task>
-    <task id="LOCAL-00003" summary="need a break">
-      <option name="closed" value="true" />
-      <created>1733340451646</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1733340451647</updated>
-    </task>
-    <task id="LOCAL-00004" summary="need a gym">
-      <option name="closed" value="true" />
-      <created>1733342030858</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1733342030858</updated>
-    </task>
-    <task id="LOCAL-00005" summary="need a gym encore, tete dans mon cul">
-      <option name="closed" value="true" />
-      <created>1733360972621</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1733360972621</updated>
-    </task>
-    <task id="LOCAL-00006" summary="pas parfait. so je suis fatiguer du cerveau. il est quand meme 22h56">
-      <option name="closed" value="true" />
-      <created>1733370977068</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1733370977068</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="exercice 1 ✅" />
-    <MESSAGE value="petite pause xoxo" />
-    <MESSAGE value="need a break" />
-    <MESSAGE value="need a gym" />
-    <MESSAGE value="need a gym encore, tete dans mon cul" />
-    <MESSAGE value="pas parfait. so je suis fatiguer du cerveau. il est quand meme 22h56" />
-    <option name="LAST_COMMIT_MESSAGE" value="pas parfait. so je suis fatiguer du cerveau. il est quand meme 22h56" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/TP2/js/main_noel.js</url>
+          <line>18</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
