@@ -1,10 +1,14 @@
 const numeroChoisit = document.getElementById("numeroChoisit");
 const messageErreur  = document.getElementById("messageErreur");
 const formulaireInscription = document.getElementById("formulaireInscription");
-const replayButton = document.getElementById("replayButton");
-formulaireInscription.onsubmit = PrendreLeNombre;
 const NombreAleatoire =  Math.floor(Math.random() * 100) + 1;
 let nombresEssais = 0;
+
+formulaireInscription.onsubmit = PrendreLeNombre;
+
+function RechargerLaPage() {
+    location.reload();
+}
 
 function PrendreLeNombre(evenement) {
     const userNumber = parseInt(numeroChoisit.value);
@@ -30,7 +34,7 @@ function PrendreLeNombre(evenement) {
                 <button class="btn btn-success" id="replayButton">Jouer à nouveau</button>
             </div>
         `;
-        replayButton.onclick = () => location.reload();
+        document.getElementById("replayButton").onclick = RechargerLaPage;
         evenement.preventDefault();
     }
 }
