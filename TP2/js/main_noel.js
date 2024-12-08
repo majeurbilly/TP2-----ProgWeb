@@ -47,7 +47,7 @@ function GetCheckBoxChecked(checkBox) {
 function Activity_IsSelect() {
     AllCheckBox.forEach(GetCheckBoxChecked)
     if (nombreDeCheckBoxChecked !== 2) {
-        messageErreur.textContent = "Vous devez choisir 2 activités";
+        messageErreur.textContent = "Vous devez choisir 2 activités.";
         return false;
     }
     else {

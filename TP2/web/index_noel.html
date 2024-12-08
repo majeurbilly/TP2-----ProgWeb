@@ -10,32 +10,26 @@
 <body>
 <h1 class="text-center mt-5">Invitation au party de noel de Billy</h1>
 <div class="container fluid mt-5 text-center">
-    <form action="" id="formulaireInscription" method="post">
+    <form action="https://progweb1-validation-formulaire-e4hae7gedrdvbbaq.canadacentral-01.azurewebsites.net/" id="formulaireInscription" method="post">
         <div>
             <label for="nomEmploye" class="form-label">Quelle est votre nom :
                 <input type="text" name="nomEmploye" id="nomEmploye" required>
             </label>
         </div>
-
-
-
         <div>
             <p>Allez vous etre present?</p>
             <label for="presenceEmploye" class="form-label">OUI
-                <input type="radio" value="oui" name="PrendrePresence" id="presenceEmploye" required>
+                <input type="radio" value="oui" name="presenceEmploye" id="presenceEmploye" required>
             </label>
             <label for="presenceEmploye" class="form-label">NON
-                <input type="radio" value="non" name="PrendrePresence" id="AbsentEmploye">
+                <input type="radio" value="non" name="presenceEmploye" id="AbsentEmploye">
             </label>
         </div>
-
-
-
         <div class="d-none" id="employePresent">
             <div>
                 <p>Quelle sera ton repas</p>
                 <label for="choixRepasEmploye">
-                    <select name="MenuEmploye" id="choixRepasEmploye">
+                    <select name="choixRepasEmploye" id="choixRepasEmploye">
                         <option value="" selected disabled></option>
                         <option value="pouletAnanas">Poulet aux ananas</option>
                         <option value="boeufBraise">Bœuf braisé</option>
@@ -43,27 +37,23 @@
                     </select>
                 </label>
             </div>
-
-
             <div>
                 <p>Allez vous etre accompagner</p>
                 <label for="seraAccompagne" class="form-label">Oui
-                    <input type="radio" value="oui" name="ClientisAccompagner" id="seraAccompagne">
+                    <input type="radio" value="oui" name="seraAccompagne" id="seraAccompagne">
                 </label>
                 <label for="seraAccompagne" class="form-label">Non
-                    <input type="radio" value="non" name="ClientisAccompagner" id="seraPasAccompagne">
+                    <input type="radio" value="non" name="seraAccompagne" id="seraPasAccompagne">
                 </label>
             </div>
-
-
             <div class="d-none" id="employeEstAccompagne">
                 <p>Nom de votre partenaire : </p>
                 <label for="nomInvite">
-                    <input type="text" name="nomDuPartenaire" id="nomInvite">
+                    <input type="text" name="nomInvite" id="nomInvite">
                 </label>
                 <p>Quelle sera repas de l'invité</p>
                 <label for="choixRepasInvite">
-                    <select name="MenuInvite" id="choixRepasInvite">
+                    <select name="choixRepasInvite" id="choixRepasInvite">
                         <option value="" selected disabled></option>
                         <option value="pouletAnanas">Poulet aux ananas</option>
                         <option value="boeufBraise">Bœuf braisé</option>
@@ -71,9 +61,6 @@
                     </select>
                 </label>
             </div>
-
-
-
             <div>
                 <p>Une sélection obligatoire de deux activités parmi :</p>
                 <label>
@@ -99,7 +86,6 @@
         <button class="btn btn-primary" type="submit" id="boutonDenvoie">Envoyer</button>
     </form>
     <div class="alert alert-danger d-none col-12 mt-5" id="messageErreur">
-
     </div>
 </div>
 </body>

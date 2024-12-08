@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cf0cdc3-21e4-4e01-8aab-fc805c5e0484" name="Changes" comment="toute est chill">
+    <list default="true" id="7cf0cdc3-21e4-4e01-8aab-fc805c5e0484" name="Changes" comment="encore plus chill">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP2/js/main_Hi_Low.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/js/main_Hi_Low.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP2/js/main_noel.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/js/main_noel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP2/web/index_noel.html" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/web/index_noel.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <updated>1733594721228</updated>
       <workItem from="1733594724369" duration="10434000" />
       <workItem from="1733686290906" duration="271000" />
-      <workItem from="1733686565666" duration="8832000" />
+      <workItem from="1733686565666" duration="9671000" />
     </task>
     <task id="LOCAL-00001" summary="criss de pluque">
       <option name="closed" value="true" />
@@ -100,7 +100,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733695219811</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="encore plus chill">
+      <option name="closed" value="true" />
+      <created>1733697164723</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733697164723</updated>
+    </task>
+    <task id="LOCAL-00005" summary="encore plus chill">
+      <option name="closed" value="true" />
+      <created>1733697217054</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733697217054</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +136,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="criss de pluque" />
     <MESSAGE value="toute est chill" />
-    <option name="LAST_COMMIT_MESSAGE" value="toute est chill" />
+    <MESSAGE value="encore plus chill" />
+    <option name="LAST_COMMIT_MESSAGE" value="encore plus chill" />
   </component>
 </project>
