@@ -1,53 +1,53 @@
-const isPresent = document.getElementById("presenceEmploye");
-const isPresentNot = document.getElementById("isNotPresenceEmploye");
-const userIsPresent = document.getElementById("userIsPresent");
+const presenceEmploye = document.getElementById("presenceEmploye");
+const AbsentEmploye = document.getElementById("AbsentEmploye");
+const employePresent = document.getElementById("employePresent");
 const ValidationFormulaire = document.getElementById("formulaireInscription");
-const isAccompagner = document.getElementById("seraAccompagne");
-const isNotAccompagner = document.getElementById("seraPasAccompagne");
-const userIsAccompagner = document.getElementById("userIsAccompagner");
+const seraAccompagne = document.getElementById("seraAccompagne");
+const seraPasAccompagne = document.getElementById("seraPasAccompagne");
+const employeEstAccompagne = document.getElementById("employeEstAccompagne");
 const AllCheckBox = document.querySelectorAll('input[name="activities"]');
-const nameOfPartenaire = document.getElementById("nomInvite");
-const estAccompagne = document.getElementById("estAccompagne");
-let counter = 0;
+const nomInvite = document.getElementById("nomInvite");
+const choixRepasEmploye = document.getElementById("choixRepasEmploye");
+const choixRepasInvite = document.getElementById("choixRepasInvite");
+let nombreDeCheckBoxChecked = 0;
 
-isPresent.onclick = UserItIsPresent;
-isPresentNot.onclick = UserItIsPresent;
-isAccompagner.onclick = ItIsAccompagner;
-isNotAccompagner.onclick = ItIsAccompagner;
-ValidationFormulaire.onsubmit = Formulaire_Valide;
+presenceEmploye.onclick = PrendrePresenceEmploye;
+AbsentEmploye.onclick = PrendrePresenceEmploye;
+seraAccompagne.onclick = PrendrePresenceInvite;
+seraPasAccompagne.onclick = PrendrePresenceInvite;
+ValidationFormulaire.onsubmit = Validation_Formulaire;
 
-function UserItIsPresent() {
-    if (isPresent.checked) {
-        userIsPresent.classList.remove("d-none");
+function PrendrePresenceEmploye() {
+    if (presenceEmploye.checked) {
+        employePresent.classList.remove("d-none");
+        choixRepasEmploye.required = true;
+        seraAccompagne.required = true;
     } else {
-        userIsPresent.classList.add("d-none");
+        employePresent.classList.add("d-none");
     }
 }
-function ItIsAccompagner() {
-    if (isAccompagner.checked) {
-        nameOfPartenaire.required = true;
-        userIsAccompagner.classList.remove("d-none");
-        estAccompagne.classList.remove("d-none");
+function PrendrePresenceInvite() {
+    if (seraAccompagne.checked) {
+        nomInvite.required = true;
+        choixRepasInvite.required = true;
+        employeEstAccompagne.classList.remove("d-none");
 
-    } else if (isNotAccompagner.checked) {
-        nameOfPartenaire.required = false;
-        userIsAccompagner.classList.add("d-none");
-        estAccompagne.classList.add("d-none");
+    } else if (seraPasAccompagne.checked) {
+        nomInvite.required = false;
+        employeEstAccompagne.classList.add("d-none");
     }
 }
 
-function GetCheckBoxChecked() {
-    return (checkBox) => {
-        if (checkBox.checked) {
-            counter++;
-        }
-    };
+function GetCheckBoxChecked(checkBox) {
+    if (checkBox.checked) {
+        nombreDeCheckBoxChecked++;
+    }
 }
 
 function Activity_IsSelect() {
-    AllCheckBox.forEach(GetCheckBoxChecked())
-    if (counter !== 2) {
-        messageErreur.textContent = " Vous devez choisir 2 activités * ";
+    AllCheckBox.forEach(GetCheckBoxChecked)
+    if (nombreDeCheckBoxChecked !== 2) {
+        messageErreur.textContent = "Vous devez choisir 2 activités";
         return false;
     }
     else {
@@ -56,10 +56,10 @@ function Activity_IsSelect() {
     }
 }
 
-function Formulaire_Valide(evenement) {
+function Validation_Formulaire(evenement) {
 
-    if (!Activity_IsSelect()) {
-        counter = 0;
+    if (!Activity_IsSelect() && presenceEmploye.checked) {
+        nombreDeCheckBoxChecked = 0;
         messageErreur.classList.remove("d-none");
         evenement.preventDefault();
     } else {
