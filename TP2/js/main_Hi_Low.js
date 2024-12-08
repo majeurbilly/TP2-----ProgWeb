@@ -30,7 +30,6 @@ function PrendreLeNombre(evenement) {
                 <button class="btn btn-success" id="replayButton">Jouer à nouveau</button>
             </div>
         `;
-
         replayButton.onclick = () => location.reload();
         evenement.preventDefault();
     }
