@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cf0cdc3-21e4-4e01-8aab-fc805c5e0484" name="Changes" comment="encore plus chill">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP2/js/main_noel.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/js/main_noel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP2/web/index_noel.html" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/web/index_noel.html" afterDir="false" />
-    </list>
+    <list default="true" id="7cf0cdc3-21e4-4e01-8aab-fc805c5e0484" name="Changes" comment="encore plus chill" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +71,7 @@
       <workItem from="1733594724369" duration="10434000" />
       <workItem from="1733686290906" duration="271000" />
       <workItem from="1733686565666" duration="9671000" />
+      <workItem from="1733712957202" duration="126000" />
     </task>
     <task id="LOCAL-00001" summary="criss de pluque">
       <option name="closed" value="true" />

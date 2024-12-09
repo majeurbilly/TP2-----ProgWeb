@@ -23,6 +23,8 @@ function PrendrePresenceEmploye() {
         choixRepasEmploye.required = true;
         seraAccompagne.required = true;
     } else {
+        choixRepasEmploye.required = false;
+        seraAccompagne.required = false;
         employePresent.classList.add("d-none");
     }
 }
@@ -34,6 +36,7 @@ function PrendrePresenceInvite() {
 
     } else if (seraPasAccompagne.checked) {
         nomInvite.required = false;
+        choixRepasInvite.required = false;
         employeEstAccompagne.classList.add("d-none");
     }
 }
