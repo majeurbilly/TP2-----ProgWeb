@@ -68,6 +68,4 @@ function Validation_Formulaire(evenement) {
     } else {
         alert("Formuaire envoyé")
     }
-
-    replayButton.onclick = () => location.reload();
 }
