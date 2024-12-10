@@ -5,11 +5,11 @@ const ValidationFormulaire = document.getElementById("formulaireInscription");
 const seraAccompagne = document.getElementById("seraAccompagne");
 const seraPasAccompagne = document.getElementById("seraPasAccompagne");
 const employeEstAccompagne = document.getElementById("employeEstAccompagne");
-const AllCheckBox = document.querySelectorAll('input[name="activities"]');
+const CheckBoxs = document.querySelectorAll('input[name="activities"]');
 const nomInvite = document.getElementById("nomInvite");
 const choixRepasEmploye = document.getElementById("choixRepasEmploye");
 const choixRepasInvite = document.getElementById("choixRepasInvite");
-let nombreDeCheckBoxChecked = 0;
+let nombreDeCheckBoxs = 0;
 
 presenceEmploye.onclick = PrendrePresenceEmploye;
 AbsentEmploye.onclick = PrendrePresenceEmploye;
@@ -43,13 +43,13 @@ function PrendrePresenceInvite() {
 
 function GetCheckBoxChecked(checkBox) {
     if (checkBox.checked) {
-        nombreDeCheckBoxChecked++;
+        nombreDeCheckBoxs++;
     }
 }
 
 function Activity_IsSelect() {
-    AllCheckBox.forEach(GetCheckBoxChecked)
-    if (nombreDeCheckBoxChecked !== 2) {
+    CheckBoxs.forEach(GetCheckBoxChecked)
+    if (nombreDeCheckBoxs !== 2) {
         messageErreur.textContent = "Vous devez choisir 2 activités.";
         return false;
     }
@@ -62,7 +62,7 @@ function Activity_IsSelect() {
 function Validation_Formulaire(evenement) {
 
     if (!Activity_IsSelect() && presenceEmploye.checked) {
-        nombreDeCheckBoxChecked = 0;
+        nombreDeCheckBoxs = 0;
         messageErreur.classList.remove("d-none");
         evenement.preventDefault();
     } else {

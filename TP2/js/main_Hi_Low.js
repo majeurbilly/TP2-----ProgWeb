@@ -1,6 +1,9 @@
 const numeroChoisit = document.getElementById("numeroChoisit");
 const messageErreur  = document.getElementById("messageErreur");
 const formulaireInscription = document.getElementById("formulaireInscription");
+const pageDuJeu = document.getElementById("pageDuJeu");
+const pageDeFin = document.getElementById("pageDeFin");
+const messageVictoire = document.getElementById("messageVictoire");
 const NombreAleatoire =  Math.floor(Math.random() * 100) + 1;
 let nombresEssais = 0;
 
@@ -28,12 +31,9 @@ function PrendreLeNombre(evenement) {
         evenement.preventDefault();
     } else {
         messageErreur.classList.add('d-none');
-        formulaireInscription.innerHTML = `
-            <div class="text-center">
-                <p>Bravo! Vous avez gagné en ${nombresEssais} coups.</p>
-                <button class="btn btn-success" id="replayButton">Jouer à nouveau</button>
-            </div>
-        `;
+        pageDuJeu.classList.add('d-none');
+        pageDeFin.classList.remove('d-none');
+        messageVictoire.textContent = `Bravo! Vous avez gagné en ${nombresEssais} coups.`;
         document.getElementById("replayButton").onclick = RechargerLaPage;
         evenement.preventDefault();
     }

@@ -11,10 +11,14 @@
 <p></p>
 
 <form method="get" action="" id="formulaireInscription" class="formulaireInscription">
-    <div class="text-center">
+    <div class="text-center" id=pageDuJeu>
         <label for="numeroChoisit" class="from-label">Choississez un nombre entre 1 et 100 :</label>
         <input max="100" min="0" name="numeroChoisit" id="numeroChoisit" required type="number">
         <button class="btn btn-primary" type="submit">Envoyer</button>
+    </div>
+    <div class="text-center d-none" id=pageDeFin>
+        <p id="messageVictoire"></p>
+        <button class="btn btn-success" id="replayButton">Jouer à nouveau</button>
     </div>
 
 </form>

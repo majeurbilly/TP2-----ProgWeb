@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cf0cdc3-21e4-4e01-8aab-fc805c5e0484" name="Changes" comment="encore plus chill" />
+    <list default="true" id="7cf0cdc3-21e4-4e01-8aab-fc805c5e0484" name="Changes" comment="encore plus chill">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP2/js/main_Hi_Low.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/js/main_Hi_Low.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP2/js/main_noel.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/js/main_noel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP2/web/index_Hi_Low.html" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/web/index_Hi_Low.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,12 +31,12 @@
     &quot;assignee&quot;: &quot;majeurbilly&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/majeurbilly/TP2-----ProgWeb.git&quot;,
-    &quot;accountId&quot;: &quot;9514aa2a-2207-4f22-aac9-8de56e4409d8&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/majeurbilly/TP2-----ProgWeb.git",
+    "accountId": "22f9c1ca-0b8a-4b55-8fe7-e38014c71af4"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -60,6 +65,13 @@
       <recent name="C:\Users\jefou\OneDrive\Desktop\TP2-----ProgWeb\TP2\js" />
     </key>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.112" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,6 +84,7 @@
       <workItem from="1733686290906" duration="271000" />
       <workItem from="1733686565666" duration="9671000" />
       <workItem from="1733712957202" duration="126000" />
+      <workItem from="1733852151199" duration="6678000" />
     </task>
     <task id="LOCAL-00001" summary="criss de pluque">
       <option name="closed" value="true" />
